@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54f6e21b-25a9-4fc1-8bc4-76969c905039" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/image(1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/image(2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/image(3).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/image(4).png" afterDir="false" />
+    <list default="true" id="54f6e21b-25a9-4fc1-8bc4-76969c905039" name="Changes" comment="web">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -60,9 +55,22 @@
       <option name="presentableId" value="Default" />
       <updated>1692387421157</updated>
     </task>
+    <task id="LOCAL-00001" summary="web">
+      <option name="closed" value="true" />
+      <created>1693237169708</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693237169708</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="docker-compose.yaml" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="web" />
+    <option name="LAST_COMMIT_MESSAGE" value="web" />
   </component>
 </project>
