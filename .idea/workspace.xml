@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54f6e21b-25a9-4fc1-8bc4-76969c905039" name="Changes" comment="web">
+    <list default="true" id="54f6e21b-25a9-4fc1-8bc4-76969c905039" name="Changes" comment="web2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pgadmin-data/sessions/152e7695-4f88-4c9a-b740-97ca14a10590" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pgadmin-data/sessions/55dfc9ab-c338-4699-b7ea-0bb56b8286bf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +39,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "lesson13",
-    "last_opened_file_path": "/Users/mac/Desktop/lesson11"
+    "last_opened_file_path": "/Users/mac/Desktop/lesson11/app/templates"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/static/images" />
       <recent name="$PROJECT_DIR$/app/static" />
@@ -63,7 +68,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693237169708</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="web2">
+      <option name="closed" value="true" />
+      <created>1693430538272</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693430538273</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -71,6 +84,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="web" />
-    <option name="LAST_COMMIT_MESSAGE" value="web" />
+    <MESSAGE value="web2" />
+    <option name="LAST_COMMIT_MESSAGE" value="web2" />
   </component>
 </project>
