@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54f6e21b-25a9-4fc1-8bc4-76969c905039" name="Changes" comment="web2">
+    <list default="true" id="54f6e21b-25a9-4fc1-8bc4-76969c905039" name="Changes" comment="web3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/pgadmin-data/sessions/152e7695-4f88-4c9a-b740-97ca14a10590" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/pgadmin-data/sessions/55dfc9ab-c338-4699-b7ea-0bb56b8286bf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -33,15 +35,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "lesson13",
-    "last_opened_file_path": "/Users/mac/Desktop/lesson11/app/templates"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lesson13&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mac/HillelProjects/lesson11&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/templates" />
@@ -76,7 +78,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693430538273</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="web3">
+      <option name="closed" value="true" />
+      <created>1693502999960</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693502999960</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -85,6 +95,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="web" />
     <MESSAGE value="web2" />
-    <option name="LAST_COMMIT_MESSAGE" value="web2" />
+    <MESSAGE value="web3" />
+    <option name="LAST_COMMIT_MESSAGE" value="web3" />
   </component>
 </project>
