@@ -1,4 +1,5 @@
 import asyncio
+import datetime
 
 from sqlalchemy import insert, select, update, delete
 
@@ -38,10 +39,13 @@ async def create_user(
             password=password,
             notes=notes,
             is_conflict=is_conflict,
-            )
+        ).returning(User.id, User.login)
         print(query)
-        await session.execute(query)
+        data = await session.execute(query)
         await session.commit()
+        print(data, 888888888888888888888888)
+        return tuple(data)[0]
+
 
 
 async def fetch_users(skip: int = 0, limit: int = 10):
@@ -77,32 +81,32 @@ async def delete_user(user_id: int):
         await session.commit()
 
 
-async def main():
-    #
-    # await asyncio.gather(
-    #     create_user(
-    #         name='Max',
-    #         login='MaxMax',
-    #         password='Max1234',
-    #         notes='I want FAST delivery!!!!!!!!!!!!!!!!!!!!'
-    #     )
-    # )
-    await asyncio.gather(
-        create_order(
-            pizza_quantity=4,
-            customer=7,
-            pizza_price=400.4,
-            notes='fast delivery',
-        )
-    )
-
-    # await asyncio.gather(fetch_users())
-    # await asyncio.gather(get_user_by_id(3))
-    # await asyncio.gather(update_user(4))
-    # await asyncio.gather(delete_user(1))
-
-
-
-
-    # pass
-asyncio.run(main())
+# async def main():
+#     #
+#     # await asyncio.gather(
+#     #     create_user(
+#     #         name='Max',
+#     #         login='MaxMax',
+#     #         password='Max1234',
+#     #         notes='I want FAST delivery!!!!!!!!!!!!!!!!!!!!'
+#     #     )
+#     # )
+#     await asyncio.gather(
+#         create_order(
+#             pizza_quantity=4,
+#             customer=7,
+#             pizza_price=400.4,
+#             notes='fast delivery',
+#         )
+#     )
+#
+#     # await asyncio.gather(fetch_users())
+#     # await asyncio.gather(get_user_by_id(3))
+#     # await asyncio.gather(update_user(4))
+#     # await asyncio.gather(delete_user(1))
+#
+#
+#
+#
+#     # pass
+# asyncio.run(main())

@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54f6e21b-25a9-4fc1-8bc4-76969c905039" name="Changes" comment="working!">
+      <change afterPath="$PROJECT_DIR$/app/auth/auth_lib.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/auth/router_auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/auth/schemas.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pgadmin-data/pgadmin4.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/pgadmin-data/pgadmin4.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pgadmin-data/sessions/ac8b8fea-1a44-4a1c-9e1e-ac724df8e0c7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migration/versions/bf6e376abb19_new_order_table.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migration/versions/eb8bc83e1731_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -30,6 +41,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2UAfgzUjKV9tgmZnqiQScFdbkdN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

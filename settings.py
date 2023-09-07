@@ -14,3 +14,13 @@ class Settings:
     DATABASE_PASSWORD = os.getenv('DATABASE_PASSWORD', '')
     DATABASE_HOST = os.getenv('DATABASE_HOST', '')
     DATABASE_PORT = os.getenv('DATABASE_PORT', '')
+
+    TOKEN_SECRET = os.getenv('TOKEN_SECRET') or ''
+    TOKEN_ALGORITHM = os.getenv('TOKEN_ALGORITHM') or ''
+
+    MAX_NOTES_LENGTH = 200
+
+    @property
+    def DATABASE_URL(self):
+        return f'postgresql+asyncpg://{self.DATABASE_USER}:{self.DATABASE_PASSWORD}@' \
+               f'{self.DATABASE_HOST}:{self.DATABASE_PORT}/{self.DATABASE_NAME}'
