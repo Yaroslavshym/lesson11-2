@@ -1,3 +1,6 @@
+import jwt
+
+from fastapi import HTTPException, Security, status, Request
 from passlib.context import CryptContext
 from datetime import datetime, timedelta
 
