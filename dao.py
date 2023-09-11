@@ -1,28 +1,9 @@
 import asyncio
-import datetime
 
 from sqlalchemy import insert, select, update, delete
 
 from database import async_session_maker
 from models import User, Order
-
-
-async def create_order(
-        pizza_quantity: int,
-        customer: int,
-        pizza_price: float,
-        notes: str = '',
-):
-    async with async_session_maker() as session:
-        query = insert(Order).values(
-            pizza_quantity=pizza_quantity,
-            pizza_price=pizza_price,
-            notes=notes,
-            customer=customer,
-            )
-        print(query)
-        await session.execute(query)
-        await session.commit()
 
 
 async def create_user(
@@ -43,17 +24,16 @@ async def create_user(
         print(query)
         data = await session.execute(query)
         await session.commit()
-        print(data, 888888888888888888888888)
         return tuple(data)[0]
-
 
 
 async def fetch_users(skip: int = 0, limit: int = 10):
     async with async_session_maker() as session:
         query = select(User).offset(skip).limit(limit)
         result = await session.execute(query)
-        print(result.scalars().all()[0].__dict__)
-        return result
+        # print(type(result.scalars().all()[0]))
+        # print(result.scalars().all()[0].__dict__)
+        return result.scalars().all()
 
 
 async def get_user_by_id(user_id: int):
@@ -62,14 +42,22 @@ async def get_user_by_id(user_id: int):
         print(query)
         result = await session.execute(query)
         # print(result.first())
-        print(result.scalar_one_or_none())
+        # print(result.scalar_one_or_none())
+        return result.scalar_one_or_none()
+
+
+async def get_user_by_login(user_login: str):
+    async with async_session_maker() as session:
+        query = select(User).filter_by(login=user_login)
+        result = await session.execute(query)
+        return result.scalar_one_or_none()
 
 
 async def update_user(user_id: int):
     async with async_session_maker() as session:
-        query = update(User).where(User.id == user_id).values(notes='likes paperoni')
+        query = update(User).where(User.id == user_id).values(name='Vasja')
         print(query)
-        result = await session.execute(query)
+        await session.execute(query)
         await session.commit()
 
 
@@ -82,31 +70,17 @@ async def delete_user(user_id: int):
 
 
 # async def main():
-#     #
 #     # await asyncio.gather(
 #     #     create_user(
-#     #         name='Max',
-#     #         login='MaxMax',
-#     #         password='Max1234',
-#     #         notes='I want FAST delivery!!!!!!!!!!!!!!!!!!!!'
+#     #         name='name1',
+#     #         login='login2',
+#     #         password='password1',
+#     #         notes='*'*200
 #     #     )
 #     # )
-#     await asyncio.gather(
-#         create_order(
-#             pizza_quantity=4,
-#             customer=7,
-#             pizza_price=400.4,
-#             notes='fast delivery',
-#         )
-#     )
-#
 #     # await asyncio.gather(fetch_users())
 #     # await asyncio.gather(get_user_by_id(3))
-#     # await asyncio.gather(update_user(4))
-#     # await asyncio.gather(delete_user(1))
+#     # await asyncio.gather(update_user(222))
+#     await asyncio.gather(delete_user(2))
 #
-#
-#
-#
-#     # pass
 # asyncio.run(main())
